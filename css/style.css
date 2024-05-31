@@ -28,56 +28,64 @@ li {
   margin: 0 auto;
   padding: 0 10px;
 }
+
 .navbar {
-  border: 0px solid red;
+  /* border: 5px solid red; */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .logo {
-  border: 0px solid blue;
+  /* border: 5px solid blue; */
   display: block;
   font-weight: 700;
 }
-.nav-list {
-  border: 0px solid blue;
 
+.nav-list {
+  /* border: 5px solid blue; */
   list-style-type: none;
   padding: 0;
   display: flex;
 }
 
 .nav-list__item {
-  border: 0px solid lime;
+  /* border: 5px solid lime; */
   margin: 0 8px;
 }
+
 .nav-link {
-  color: black;
+  color: #212121;
   text-decoration: none;
   font-size: 12px;
 }
+
 .nav-link:hover {
   text-decoration: underline;
   color: blue;
 }
+
 .hero {
-  background-image: url(../hero-bg.png);
+  background-image: url("../images/hero-bg.jpeg");
+  background-size: cover;
   background-position: center;
-  background-color: red;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 .hero-header {
   color: #212121;
-  background-color: white;
+  background-color: #ffffff;
   display: inline;
 }
+
 .hero-text {
   color: #dadada;
 }
+
 .hero-btn {
   text-decoration: none;
   background-color: #ffffff;
@@ -85,22 +93,17 @@ li {
   padding: 8px 16px;
   border-radius: 20px;
 }
+
 .hero-btn:hover {
   background-color: #dadada;
 }
-footer {
-  background-color: #000000;
-  padding: 40px;
-}
 
-footer p {
-  color: #ffffff;
-}
 .cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .card {
   display: block;
   width: fit-content;
@@ -110,9 +113,20 @@ footer p {
   text-decoration: none;
   margin-bottom: 40px;
 }
+
 .artist-name {
   color: #424242;
 }
-.card-hover {
+
+.card:hover {
   border: 0.8px solid magenta;
+}
+
+footer {
+  background-color: #000000;
+  padding: 40px;
+}
+
+footer p {
+  color: #ffffff;
 }
