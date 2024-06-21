@@ -1,6 +1,7 @@
-body {
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -18,15 +19,10 @@ h6 {
 p,
 span,
 li {
+  font-weight: 800;
   letter-spacing: 0.08px;
-  line-height: 1.64;
-  color: #323232;
-}
-
-.container {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 10px;
+  line-height: 0.9;
+  color: #021268;
 }
 
 .navbar {
@@ -39,7 +35,7 @@ li {
 .logo {
   /* border: 5px solid blue; */
   display: block;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .nav-list {
@@ -65,68 +61,52 @@ li {
   color: blue;
 }
 
-.hero {
-  background-image: url("../images/hero-bg.jpeg");
-  background-size: cover;
+.bg {
+  /* Das Hintergrundbild */
+  background-image: url('../images/2.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
   background-position: center;
-  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Stil für die Menüleiste mit Transparenz */
+.menu-bar {
+  overflow: hidden;
+  background-color: rgba(206, 75, 0, 0.712); /* Dunkler Hintergrund mit Transparenz */
+}
+
+/* Stil für die Menülinks */
+.menu-bar a {
+  
+  padding: 0px 0px;
+
+  }
+
+/* Container-Stil */
+.container {
+  border: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Stellt sicher, dass der Container die volle Höhe der Ansicht einnimmt */
+}
+
+
+
+
+/* Stil für den Footer mit Transparenz */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.5); /* Dunkler Hintergrund mit Transparenz */
+  color: white; /* Weiße Textfarbe */
   text-align: center;
-}
-
-.hero-header {
-  color: #212121;
-  background-color: #ffffff;
-  display: inline;
-}
-
-.hero-text {
-  color: #dadada;
-}
-
-.hero-btn {
-  text-decoration: none;
-  background-color: #ffffff;
-  color: #212121;
-  padding: 8px 16px;
-  border-radius: 20px;
-}
-
-.hero-btn:hover {
-  background-color: #dadada;
-}
-
-.cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.card {
-  display: block;
-  width: fit-content;
-  border: 0.8px solid #8a8a8a;
-  border-radius: 2px;
-  padding: 24px;
-  text-decoration: none;
-  margin-bottom: 40px;
-}
-
-.artist-name {
-  color: #424242;
-}
-
-.card:hover {
-  border: 0.8px solid magenta;
-}
-
-footer {
-  background-color: #000000;
-  padding: 40px;
-}
-
-footer p {
-  color: #ffffff;
 }
