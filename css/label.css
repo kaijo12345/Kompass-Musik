@@ -53,6 +53,7 @@ label {
   textarea {
     background-color:rgba(206, 75, 0, 0.712);
     width: 100%;
+    color: #ffffff;
     }
 
   input::placeholder {
