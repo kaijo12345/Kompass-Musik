@@ -2,8 +2,7 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
+  }
 
 h1,
 h2,
@@ -80,13 +79,14 @@ li {
   background-image: url('../images/2.jpg');
 
   /* Full height */
-  height: 100%; 
-  width: 100%;
+  min-height: 100%; 
+  min-width: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 /* Stil für die Menüleiste mit Transparenz */
@@ -105,18 +105,21 @@ li {
 /* Container-Stil */
 .container {
   border: 0;
+  padding: 10px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh; /* Stellt sicher, dass der Container die volle Höhe der Ansicht einnimmt */
+  
 }
 
 .container2 {
   background-color: rgba(240, 130, 67, 0.863);
   border: 0;
   width: 90%;
-   /* Stellt sicher, dass der Container die volle Höhe der Ansicht einnimmt */
+  padding: 10px;
+  margin:auto;
+  
 }
 
 
@@ -137,3 +140,7 @@ li {
   color: #021168d2;
 
 }
+
+
+ 
+ 
