@@ -1,146 +1,213 @@
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  }
+:root {
+    --accent-color:#d52c3a;
+    --primary-color: #1b1c1f;
+    --secondary-color: #101113;
+    --text-color: #d9d9d9;
+    --secondary-text-color: #7f8082;
 
-p,
-span,
-li {
-  font-weight: 800;
-  letter-spacing: 0.08px;
-  line-height: 0.9;
-  color: #021268;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+header{
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+header .container{
+    width: 850px;
+    max-width: 100%;
+}
+header img{
+    height: 70vh;
+    padding-right: 150px;
+}
+header h1{
+    margin-top: 200px;
+    font-size: 4rem;
+}
+header h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+header p{
+    color: var(--secondary-text-color);
+}
+header .read-more{
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 1000px;
+    padding: .5em 1.25em;
+
+    transition: 200ms ease;
+    cursor: pointer;
+}
+header .read-more:hover{
+    background-color: var(--secondary-color);
+}
+    
+#skill-section{
+    padding: 80px 20px 150px 20px;
+    background-color: var(--secondary-color);
+}
+#skill-section h2{
+    font-size: 3rem;
+    text-align: center;
+}
+#skill-section .wrapper{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.skill-container{
+    width: 400px;
+    max-width: 100%;
+    border: 10px solid var(--primary-color);
+    border-top: none;
+}
+.skill-container h3{
+    background-color: var(--primary-color);
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.skill-container ul{
+    margin: 10px 0;
 }
 
-.p1 {
-  font-weight:lighter;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  line-height: 1;
-  color: #000000;
+.skill-container ul li{
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
 }
-.p2 {
-  font-weight: 100;
-  font-size: 11px;
-  letter-spacing: 0.6px;
-  line-height: 1;
-  color: #000000;
+.skill-container ul li progress{
+    accent-color: var(--accent-color);
 }
 
-.p3 {
-  font-weight: bold;
-  font-size: 12px;
-  letter-spacing: 1px;
-  line-height: 0.5;
-  color: #000000;
+#projects-section{
+    padding: 100px 20px;
 }
-
-.navbar {
-  /* border: 5px solid red; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+#projects-section h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 60px;
 }
-
-.logo {
-  /* border: 5px solid blue; */
-  display: block;
-  font-weight: 800;
+details{
+    margin: 20px auto;
+    width: 1000px;
+    max-width: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 6px;
 }
-
-.nav-list {
-  /* border: 5px solid blue; */
-  list-style-type: none;
-  padding: 0;
-  display: flex;
+details summary{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 30px;
+    padding: 30px;
 }
-
-.nav-list__item {
-  /* border: 5px solid lime; */
-  margin: 0 8px;
+details .number{
+    background-color: var(--accent-color);
+    min-height: 50px;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
-
-.nav-link {
-  color: #212121;
-  text-decoration: none;
-  font-size: 12px;
+details h3{
+    font-size: 1.75rem;
 }
-
-.nav-link:hover {
-  text-decoration: underline;
-  color: blue;
+details .text-container{
+    padding: 30px;
+    padding-top: 0;
 }
-
-.bg {
-  /* Das Hintergrundbild */
-  background-image: url('../images/2.jpg');
-
-  /* Full height */
-  min-height: 100%; 
-  min-width: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+details .project-link{
+    display: inline-block;
+    margin-top: 30px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: .75em 1.5em;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 300ms ease;
+    cursor: pointer;
 }
-
-/* Stil für die Menüleiste mit Transparenz */
-.menu-bar {
-  overflow: hidden;
-  background-color: rgba(206, 75, 0, 0.712); /* Dunkler Hintergrund mit Transparenz */
+details .project-link:hover{
+    background-color: var(--primary-color);
 }
-
-/* Stil für die Menülinks */
-.menu-bar a {
-  
-  padding: 0px 0px;
-
-  }
-
-/* Container-Stil */
-.container {
-  border: 0;
-  padding: 10px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
+footer{
+    background-color: var(--secondary-color);
+    padding: 100px 20px;
 }
-
-.container2 {
-  background-color: rgba(240, 130, 67, 0.863);
-  border: 0;
-  width: 80%;
-  padding: 10px;
-  margin:auto;
-  
+footer .grid-container{
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr max-content;
+    gap: 100px;
 }
-
-
-
-/* Stil für den Footer mit Transparenz */
-.footer {
-  background-color: rgba(206, 75, 0, 0.712);
-  position:relative;
-  left: 0;
-  bottom: 0;
-  top: 10px;
-  width: 100%;
-  color: white; /* Weiße Textfarbe */
-  text-align: center;
-  padding: 5px 5px;
-  margin: 5px 5px;
-  font-weight: 500;
-  letter-spacing: 0.08px;
-  line-height: 0.9;
-  color: #021168d2;
-   
+footer #at-symbol{
+    font-size: 250pt;
 }
-
-
- 
- 
+footer h3{
+    margin-top: 80px;
+    font-size: 2rem;
+}
+footer a{
+    margin-top: 5px;
+    display: inline-block;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+footer a:hover{
+    color: var(--text-color);
+}
+@media(max-width: 1000px){
+    header{
+        padding: 100px 20px;
+        text-align: center;
+    }
+    header h1{
+        margin-top: 0;
+        font-size: 10vw;
+    }
+    header h2{
+        font-size: 1.3rem;
+    }
+    
+    footer .grid-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+    footer #at-symbol{
+        font-size: 150pt;
+    }
+    footer h3{
+        margin-top: 50px;
+    }
+}
