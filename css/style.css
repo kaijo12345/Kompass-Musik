@@ -20,6 +20,10 @@ body {
     min-height: 100vh;
     background-color: var(--primary-color);
 }
+
+a{
+    text-decoration: none;
+}
 header{
     padding: 0 20px;
     display: flex;
@@ -58,10 +62,10 @@ header .read-more{
 
     transition: 200ms ease;
     cursor: pointer;
-}
+    }
 header .read-more:hover{
     background-color: var(--secondary-color);
-}
+    }
     
 #skill-section{
     padding: 80px 20px 150px 20px;
@@ -180,8 +184,7 @@ footer a{
     margin-top: 5px;
     display: inline-block;
     color: var(--secondary-text-color);
-    text-decoration: none;
-}
+    }
 footer a:hover{
     color: var(--text-color);
 }
